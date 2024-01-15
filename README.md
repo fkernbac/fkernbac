@@ -15,7 +15,7 @@ I'm hoping to learn...
 * :herb: scottish gaelic
 
 
-## :seedling: Main 42 Projects
+## :seedling: Interesting 42 Projects
 ### :tennis: [Transcendence](https://github.com/fkernbac/transcendence)
 >Team project:
 >create a pong contest website as single-page application.
@@ -46,6 +46,31 @@ I set up self-signed certificates and added authentication guards for all releva
 
 **Multiple Language Support:**  
 I set up the translation in English, German and Italian for our frontend. Incorporation the vue.js plugin was done quickly, but saving the user's preferred language on the database, then calling and applying it after each login method without any bugs proved more complicated.
+
+### :sunny: miniRT
+
+>Team project:
+>Write a program that renders images via raytracing.
+
+*Team size: 2*  
+*Language: C98*  
+
+#### Mandatory Part:
+* Libraries: miniLibX, a 42 C library for displaying images
+* Geometric Objects: Implement at least three simple geometric objects - plane, sphere, and cylinder.
+* Object Manipulation: Support resizing of objects and applying translation and rotation transformations.
+* Lighting System: Implement spot brightness, hard shadows, and ambient lighting with ambient and diffuse components.
+* Scene Description: Read scene details from a file with a .rt extension, specifying elements like ambient lighting, cameras, lights, spheres, planes, and cylinders.
+As the mandatory requirements for this project are quite simple, we focused on the bonus part. With my background in 3D graphics I loved introducing soft shadows, stochastic sampling, multiple light sources and global illumination.
+
+#### My Main Tasks:
+I implemented the core raytracing algorithm, vector operations and color calculation.
+* Color Correction: Enhanced the output image with color correction and color clamping. Implemented bounce color calculations and adjusted light intensity set in the input file.
+* Progressive Sampling: Introduced an option for continuous rendering until the user decides to terminate the program. The raw color values of the image are persistently saved and updated with each iteration, while the displayed image in the window undergoes real-time color correction.
+* Multi-Threading: Established thread routines with a focus on minimizing shared and duplicate memory.
+* Documentation: Emphasized code readability by incorporating comments for functions and macros. It's something easily forgotten in school projects. I also _really_ like clear and self-explanatory names.
+* Object Structures: Designed and initialized structures for vectors, rays, cameras, and threads. For the rays especially I tried to avoid any unnecessary recalculations.
+* Optimization: I sped up our rendering algorithm by rearranging conditions and calculations. Unfortunately there wasn't enough time to implement my experiments with importance sampling and early ray termination.
 
 ### :fork_and_knife: [Philosophers](https://github.com/fkernbac/philosophers)
 > Multithreading project:
