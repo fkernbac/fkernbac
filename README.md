@@ -47,7 +47,7 @@ I set up self-signed certificates and added authentication guards for all releva
 **Multiple Language Support:**  
 I set up the translation in English, German and Italian for our frontend. Incorporation the vue.js plugin was done quickly, but saving the user's preferred language on the database, then calling and applying it after each login method without any bugs proved more complicated.
 
-### :sunny: miniRT
+### :sunny: [miniRT](https://github.com/fkernbac/miniRT)
 
 >Team project:
 >Write a program that renders images via raytracing.
